@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build-electron": "ng build --base-href . && cp src/electron/* dist/",
-    "electron": "npm run build-electron && ./node_modules/.bin/electron ./dist/main.js",
+    "electron": "cd ./node_modules/.bin/ && electron ../../dist/main.js",
     "app": "cd ./node_modules/\\.bin/"
   },
   "browser": {
